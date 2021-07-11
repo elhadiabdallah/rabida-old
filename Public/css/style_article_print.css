@@ -1,0 +1,48 @@
+@page {
+    size: auto;
+}
+
+@page {
+    margin: -1cm;
+    margin-right: 0.7cm;
+    margin-left: 0.1cm;
+    margin-bottom: 3cm;
+    margin-top: 3cm;
+}
+
+@media print {
+
+    .ethr_thirteen_wide {
+        width: 100%;
+        float: none;
+    }
+    #rbd_article_nav_id,
+    .ethr_three_wide,
+    .ethr_thirteen_wide .ui.stackable.menu {
+        display: none;
+
+    }
+    .ethr_conainer_rbds_post,
+    .ethr_conainer_rbds_post .ui.segments,
+    .ethr_conainer_rbds_post_content .ethr_conainer_rbds_post_full_article {
+        padding: 0 !important;
+        border: 0 !important;
+        box-shadow: none;
+        width: 100% !important;
+        margin: 0;
+    }
+    .ui.segments,
+    .ui.segment {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    /*  ------ Special sections, using CSS class identifiers */
+    #Header,
+    #Footer {
+        display: none !important;
+    }
+}
